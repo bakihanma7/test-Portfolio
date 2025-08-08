@@ -118,3 +118,16 @@ footer {
   color: #888;
   font-size: 0.9rem;
 }
+.animate-fade-in {
+opacity: 0;
+transform: translateY(20px);
+animation: fadeInUp 1s forwards;
+}
+.animate-fade-in.delay-100 { animation-delay: 0.2s; }
+.animate-fade-in.delay-200 { animation-delay: 0.4s; }
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
